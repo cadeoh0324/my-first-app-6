@@ -28,7 +28,7 @@ LOGIN_REDIRECT_URL = reverse_lazy('vote:index')
 
 #구글 개발자 사이트에서 발급받은 키와 비밀번호
 #클라이언트 id
-SOCIAL_AUTH_GOOGLE_OAUTH2_KEY ='121296315813-7shm9a7hf6c8cht4637mbnid6q36qf2t.apps.googleusercontent.com'
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY =''
 #클라이언트 보안비밀
 SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET='QGm5Pcmy9WPangaoey7HVQoP'
 
@@ -53,9 +53,9 @@ AUTHENTICATION_BACKENDS=(
 SECRET_KEY = 'u%)@j3aw+tixgs3)=!@(j22tf7fl6p1s77=3ox26ng!utsk+s+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost','127.0.0.1','[::1]','.pythonanywhere.com']
 
 
 # Application definition
